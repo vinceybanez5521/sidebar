@@ -1,0 +1,35 @@
+body::before {
+    content: "";
+    display: block;
+    padding-top: 60px;
+}
+
+body {
+    padding: 1rem;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 250px;
+}
+
+.list-group-item i {
+    flex: 1;
+}
+
+.list-group-item span {
+    flex: 4;
+}
+
+@media (min-width: 768px) {
+    .offcanvas {
+        visibility: visible !important;
+        transform: translateX(0%) !important;
+    }
+    .offcanvas-backdrop {
+        display: none;
+    }
+    main, nav {
+        margin-left: 250px;
+    }
+}
